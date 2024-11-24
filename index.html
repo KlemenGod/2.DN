@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="koda.js" defer></script>
+  </head>
+  <body>
+    <canvas
+      width="512"
+      height="512"
+      style="border: 1px solid black"
+      id="canvas"
+    ></canvas>
+    <br />
+    <button
+      id="dodajZlepekGumb"
+      onclick='
+      dodajZlepekButton();
+      document.getElementById("dodajZlepekGumb").style.color = "green";
+      '
+    >
+      Dodaj zlepek
+    </button>
+    <button onclick="izbrisiZlepekButton()">Izbriši zlepek</button>
+    <button onclick="zagotoviC0()">Zagotovi zveznost (C0)</button>
+    <button onclick="zagotoviC1()">Zagotovi zveznost (C1)</button>
+    <br />
+    <h2>Navodila:</h2>
+    <h4>Dodajanje točk:</h4>
+    <p>Za dodajanje točk klikni gumb "Dodaj zlepek" in dodaj 4 točke.</p>
+
+    <h4>Izbris zlepka:</h4>
+    <p>
+      Z miško klikni blizu katere koli kontrolne točke. In nato klikni "Izbriši
+      zlepek".
+    </p>
+
+    <h4>Premikanje točk:</h4>
+    <p>Z miško lahko "drag and drop"-aš katero koli kontrolno točko.</p>
+
+    <h4>C0:</h4>
+    <p>Izberi zlepek in klikni gumb "Zagotovi zveznost (C0)".</p>
+
+    <h4>C1:</h4>
+    <p>Izberi zlepek in klikni gumb "Zagotovi zveznost (C1)".</p>
+  </body>
+</html>
